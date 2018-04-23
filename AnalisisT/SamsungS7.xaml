@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisT.SamsungS7">
+    <StackLayout Padding="10,32">
+        <Label Text="Samsung Galaxy S7 G930a" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Image Source="samsung_s7.png" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Precio: 300$" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Email: mengano@gmail.com" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Telefono: 87654321" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="Volver" x:Name="samsungvolver" Clicked="Volver"></Button>
+    </StackLayout>
+</ContentPage>

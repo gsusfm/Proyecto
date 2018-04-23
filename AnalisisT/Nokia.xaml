@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisT.Nokia">
+    <StackLayout Padding="10,32">
+        <Label Text="Nokia Nuevo" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Image Source="nokia.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+        <Label Text="Precio: 20$" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Email: ricardo@gmail.com" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Telefono: 13572468" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="Volver" x:Name="nokiavolver" Clicked="Volver"></Button>
+    </StackLayout>
+</ContentPage>

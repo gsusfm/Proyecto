@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisT.Iphone8">
+    <StackLayout Padding="10,32">
+        <Label Text="Iphone 8 64 GB" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Image Source="iphone_8.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+        <Label Text="" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Precio: 699$" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Email: jesus@gmail.com" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Label Text="Telefono: 12345678" VerticalOptions="Center" HorizontalOptions="Center" />
+        <Button Text="Volver" x:Name="iphone8volver" Clicked="Volver"></Button>
+    </StackLayout>
+</ContentPage>

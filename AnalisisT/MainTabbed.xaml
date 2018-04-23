@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnalisisT.MainTabbed">
+    <ContentPage Icon="search.png">
+        <ContentPage.Content>
+            <StackLayout Padding="10,32">
+                <SearchBar x:Name="busqueda" SearchButtonPressed="MainSearchBar" TextChanged="MySearchBarOnTextChanged"></SearchBar>
+                <ListView x:Name="MyListView"
+            ItemsSource="{Binding Items}"
+            ItemSelected="OnSelection"
+            CachingStrategy="RecycleElement">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell Text="{Binding Nombre}" Detail="{Binding Descripcion}" ImageSource="{Binding Imagen}" TextColor="#000000" DetailColor="#AAAAAA" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Icon="star.png">
+        <ContentPage.Content>
+            <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <Button Text="Iphone 8" x:Name="MainIphone8" Clicked="Iphone8"></Button>
+                    <Image Source="iphone_8.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+                    <Button Text="Iphone X" x:Name="MainIphoneX" Clicked="IphoneX"></Button>
+                    <Image Source="iphone_x.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+                    <Button Text="Samsung S7" x:Name="MainSamsungS7" Clicked="SamsungS7"></Button>
+                    <Image Source="samsung_s7.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+                    <Button Text="Nokia" x:Name="MainNokia" Clicked="Nokia"></Button>
+                    <Image Source="nokia.png" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" HeightRequest="200"/>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage.Content>
+    </ContentPage>
+    <ContentPage Icon="icon.png">
+        <ContentPage.Content>
+            <StackLayout Padding="10,32">
+                <Image Source="xamarin_logo.png" />
+                <Label Text="Desarrollado en xamarin forms por:" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Label Text="Jesus Fuentes" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Label Text="Richard Lares" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Label Text="Ricardo Masis" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Button Text="Cerrar Sesión" x:Name="Logout" Clicked="OnLogoutButtonClicked"></Button>
+                <Button Text="Azure" x:Name="Azure" Clicked="azure"></Button>
+            </StackLayout>
+        </ContentPage.Content>
+    </ContentPage>
+</TabbedPage>
